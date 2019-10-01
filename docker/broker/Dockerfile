@@ -35,7 +35,7 @@ ENV CATALINA_OPTS "-server -Djava.awt.headless=true \
 	-DGEOSERVER_DATA_DIR=${GEOSERVER_DATA_DIR} \
         -Dactivemq.transportConnectors.server.uri=\"tcp://0.0.0.0:61666?maximumConnections=1000&wireFormat.maxFrameSize=104857600&jms.useAsyncSend=true&transport.daemon=true\""
 
-RUN apt-get update && apt-get install telnet
+#RUN apt-get update && apt-get install telnet
 
 CMD catalina.sh run
 
